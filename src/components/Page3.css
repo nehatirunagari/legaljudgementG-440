@@ -1,0 +1,143 @@
+
+body {
+  font-family: "Public Sans", "Noto Sans", sans-serif;
+  background-color: white;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  background-color: white;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  padding: 16px 15px;
+  align-items: center;
+  height: 30px;
+  z-index: 1000; 
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#logo {
+  text-align: left;
+  color: black;
+  top: 50%;
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  color: black;
+  font-size: large;
+  font-weight: 800;
+  margin-right: 500px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: 700;
+  margin-right: 50px;
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-left: 180px;
+}
+
+.upload-section {
+  background-image: url('../public/images/image1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 250px;
+  color: black;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px 40px 90px 40px;
+  margin: 0;
+}
+
+.upload-button {
+  background-color: #c0d9f1;
+  border-radius: 20px;
+  color: black;
+  font-weight: 600;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  width: 200px;
+  bottom: 10%;
+  left: 38%;
+}
+
+h2 {
+  font-size: 35px;
+  padding: auto;
+  color: white;
+  margin-top: 90px;
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  top: 50px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.summary,
+.qa {
+  padding: 12px 24px;
+  border-radius: 20px;
+  width: 200px;
+  font-weight:600;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 100px;
+  background-color: rgb(212, 210, 210);
+  color: black;
+}
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 60px;
+  margin-left: 100px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; 
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
