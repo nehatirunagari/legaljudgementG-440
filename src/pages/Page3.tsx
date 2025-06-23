@@ -1,5 +1,6 @@
 import { useNavigate, Link } from "react-router-dom";
-
+import "../components/Page3.css";
+import { FaUserCircle } from "react-icons/fa";
 function Page3() {
   const navigate = useNavigate();
 
@@ -9,17 +10,21 @@ function Page3() {
   const handleAskSummary = () => {
     navigate("/page4");
   };
-
   return (
     <>
       <nav className="navbar">
         <div id="logo">Legal AI</div>
-        <ul className="nav-links">
+        <ul>
           <li>
-            <Link to="/page1">About Us</Link>
+            <Link to="/page1">AboutUs</Link>
           </li>
           <li>
-            <Link to="/page1">Home</Link>{" "}
+            <Link to="/page1">Home</Link>
+          </li>
+          <li className="user-icon">
+            <Link to="/profile">
+              <FaUserCircle />
+            </Link>
           </li>
         </ul>
       </nav>
@@ -28,7 +33,7 @@ function Page3() {
         <div className="upload-section">
           <h2>Unlock the Essence of Legal Documents</h2>
           <p>
-            Upload your legal judgement and choose to either get a concise
+            Upload your legal judgement PDF and choose to either get a concise
             summary or ask specific questions to understand its key points
           </p>
           <button className="upload-button">Upload Document</button>
